@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App with Icons</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.todo-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#todo-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-button {
+    padding: 10px;
+    border: none;
+    background-color: #d4c115;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    background-color: #216288;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    color: #333;
+}
+
+li .icons {
+    display: flex;
+    gap: 10px;
+}
+
+li i {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+li .edit-icon {
+    color: #ffc107;
+}
+
+li .edit-icon:hover {
+    background-color: #fa2536;
+}
+
+li .delete-icon {
+    color: #dc3545;
+}
+
+li .delete-icon:hover {
+    background-color: #0a5d83;
+}
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        <div class="input-section">
+            <input type="text" id="todo-input" placeholder="Enter new task">
+            <button id="add-button">Add</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+
+   <script src="to-do-list.js"></script>
+</body>
+</html>
